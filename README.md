@@ -16,8 +16,7 @@ In addition to 10x Genomics results it offers:
 * Flexible and clear data preprocessing and normalization methods
 * Summary on different conditions in case of aggregated dataset
 * Different types of clustering followed by heatmap and t-SNE visualizations in low dimensions space
-* MannWhitney U test based differential analysis
-* Top cluster markers visualization of t-SNE plot
+* Top cluster markers visualization on heatmap / t-SNE plot
 * Closest genes annotations for peaks and clusters
 * Annotated cell-specific genes analysis
 * BED files for clusters and markers ready-to-be-visualized in [JBR Genome Browser][jbr] by JetBrains Research
