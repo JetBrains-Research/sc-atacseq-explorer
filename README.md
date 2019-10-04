@@ -9,7 +9,7 @@ In addition to 10x Genomics results it offers:
 
 * Flexible and clear data preprocessing and normalization methods
 * Summary on different conditions in case of aggregated dataset
-* Different types of clustering followed by heatmap and t-SNE visualizations in low dimensions space
+* UMAP or t-SNE visualizations in low dimensions space
 * Top cluster markers visualization on heatmap / t-SNE plot
 * Closest genes annotations for peaks and clusters
 * Annotated cell-specific genes analysis
