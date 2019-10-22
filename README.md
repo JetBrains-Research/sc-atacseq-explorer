@@ -2,7 +2,7 @@ sc-atacseq-explorer
 ===================
 
 This single cell ATAC-Seq analysis pipeline is designed for intergative analysis of
-dataset, initially processed by 10x Genomics [Cell Ranger ATAC][10xcellranger].
+dataset, initially processed by 10x Genomics [Cell Ranger ATAC][10xcellranger].\
 Jupyter Notebook format allows you to experiment with any types of parameters on the fly.
 
 In addition to 10x Genomics results it offers:
@@ -10,11 +10,37 @@ In addition to 10x Genomics results it offers:
 * Flexible and clear data preprocessing and normalization methods
 * Summary on different conditions in case of aggregated dataset
 * UMAP or t-SNE visualizations in low dimensions space
-* Top cluster markers visualization on heatmap / t-SNE plot
+* Top cluster markers visualization
 * Closest genes annotations for peaks and clusters
 * Annotated cell-specific genes analysis
 * Bigwig and BED files for clusters and markers ready-to-be-visualized in [JBR Genome Browser][jbr] by JetBrains Research
 * Data preparation for [single cell explorer][sce] by Artyomov Lab, Washington University in St.Louis
+
+Cell Ranger ATAC
+----------------
+* Launch batch cell ranger processing.\
+  **NOTE**: we don't launch it in parallel because of martian framework used by Cell Ranger ATAC.
+
+```
+for SAMPLE in $(ls *.fastq.gz | sed -E 's/_S[0-9]_L00.*//g' | sort --unique); do
+    cellranger-atac count --id=cra_${SAMPLE} --fastqs=${WORK_DIR} --sample ${SAMPLE} --reference ${REFERENCE}
+done
+```
+
+* Create aggregation file `merged.csv`
+
+```
+library_id,fragments,cells
+<id1>,<path1>/outs/fragments.tsv.gz,<path1>/outs/singlecell.csv
+...
+<idN>,<pathN>/outs/fragments.tsv.gz,<pathN>/outs/singlecell.csv
+```
+
+* Launch aggregation
+
+```
+cellranger-atac aggr --id=<id> --csv merged.csv --normalize=depth --reference=${REFERENCE}
+```
 
 Pipelines
 ---------
