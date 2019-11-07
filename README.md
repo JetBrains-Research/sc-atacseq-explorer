@@ -15,6 +15,7 @@ In addition to 10x Genomics results it offers:
 * Annotated cell-specific genes analysis
 * Bigwig and BED files for clusters and markers ready-to-be-visualized in [JBR Genome Browser][jbr] by JetBrains Research
 * Data preparation for [single cell explorer][sce] by Artyomov Lab, Washington University in St.Louis
+* Save all the figures to ready for publication PDF format
 
 Cell Ranger ATAC
 ----------------
