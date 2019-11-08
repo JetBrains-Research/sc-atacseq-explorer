@@ -45,11 +45,13 @@ cellranger-atac aggr --id=<id> --csv merged.csv --normalize=depth --reference=${
 
 Pipelines
 ---------
-* [Cell Ranger ATAC](https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/algorithms/overview) & [source code](https://github.com/10XGenomics/cellranger)
 * [Seurat](https://www.biorxiv.org/content/biorxiv/early/2018/11/02/460147.full.pdf)
+* [Cell Ranger ATAC](https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/algorithms/overview) & [source code](https://github.com/10XGenomics/cellranger)
 * [Scasat](https://academic.oup.com/nar/article/47/2/e10/5134327)
 * [SnapATAC](https://www.biorxiv.org/content/10.1101/615179v2)
 * [Scater](https://academic.oup.com/bioinformatics/article/33/8/1179/2907823)
+* [Signac](https://satijalab.org/signac/articles/pbmc_vignette.html)
+* [Benchmark](https://github.com/pinellolab/scATAC-benchmarking)
 
 Materials
 ---------
