@@ -2,21 +2,20 @@
 
 sc-atacseq-explorer
 ===================
-
-This single cell ATAC-Seq analysis pipeline is designed for intergative analysis of
-dataset, initially processed by 10x Genomics [Cell Ranger ATAC][10xcellranger].\
-Jupyter Notebook format allows you to experiment with any types of parameters on the fly.
+This single cell ATAC-Seq analysis pipeline is designed for advanced analysis of dataset, 
+produced by 10X Genomics [Cell Ranger ATAC][10xcellranger]. 
+Aggregated datasets are also supported!
 
 In addition to 10x Genomics results it offers:
 
-* Flexible and clear data preprocessing and normalization methods
+* Capable to process aggregated data by 10X Genomics Cell Ranger ATAC.
 * Summary on different conditions in case of aggregated dataset
-* UMAP or t-SNE visualizations in low dimensions space
-* Top cluster markers visualization
+* Different types of clustering followed by heatmap and t-SNE/UMAP visualizations in low dimensions space
+* Top cluster markers visualization as heatmap on t-SNE/UMAP plot
 * Closest genes annotations for peaks and clusters
-* Annotated cell-specific genes analysis
+* Annotated markers analysis
 * Bigwig and BED files for clusters and markers ready-to-be-visualized in [JBR Genome Browser][jbr] by JetBrains Research
-* Data preparation for [single cell explorer][sce] by Artyomov Lab, Washington University in St.Louis
+* Data preparation for [Single Cell Explorer][sce] by Artyomov Lab, Washington University in St.Louis
 * Save all the figures to ready for publication PDF format
 
 Cell Ranger ATAC
