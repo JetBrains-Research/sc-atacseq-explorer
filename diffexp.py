@@ -6,13 +6,6 @@
 # Copyright (c) 2017 10X Genomics, Inc. All rights reserved.
 #
 
-#!/usr/bin/env python
-#
-# This is a modified copy of https://github.com/10XGenomics/cellranger/blob/master/lib/python/cellranger/analysis/diffexp.py
-#
-# Copyright (c) 2017 10X Genomics, Inc. All rights reserved.
-#
-
 import numpy as np
 import pandas as pd
 from scipy.special import gammaln, logsumexp
