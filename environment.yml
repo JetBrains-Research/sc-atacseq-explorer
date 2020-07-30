@@ -1,0 +1,24 @@
+name: sc-atac-explorer
+channels:
+  - anaconda
+  - conda-forge
+  - bioconda
+  - r
+  - defaults
+dependencies:
+  - h5py=2.10.0=py36h0601b69_1
+  - matplotlib=3.2.2=0
+  - notebook=6.0.3=py36h9f0ad1d_1
+  - numpy=1.17.0=py36hacdab7b_0
+  - pip=20.1.1=py36_1
+  - pybedtools=0.8.1=py36h0c56d2d_2
+  - pybigwig=0.3.17=py36haec6b85_0
+  - python=3.6.10=hf48f09d_2
+  - scikit-learn=0.23.1=py36h603561c_0
+  - scipy=1.5.0=py36h912ce22_0
+  - seaborn=0.9.0=py36_0
+  - umap-learn=0.4.6=py36h9f0ad1d_0
+  - pip:
+    - pandas==0.21.0
+    - tqdm==4.48.0
+
